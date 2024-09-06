@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    background-color:#000000d8;height:100vh ;
+    width: 100vw;
+    display: flex;
+    min-height: 500px;
+    
+}
+.gene{
+   
+    background-color: aliceblue;
+    width:25%;
+    margin:  auto;
+    margin-top: auto;
+    justify-content: center;
+   padding: 30px;
+   border-radius: 20px;
+}
+input{
+    width: 88%;
+    height: 20%;
+    
+    outline:none;
+    padding: 15px;font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.click{
+    text-align: center;
+    width:88% ;
+    color: aliceblue;
+    background-color: blue;
+    font-weight: 600;
+    font-size: larger;
+   height: 10%;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: sans-serif;
+    user-select: none;
+
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+img#img{
+    height:100%;
+    width:100%;
+}
