@@ -1,55 +1,108 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.container{
-    background-color:#000000d8;height:100vh ;
-    width: 100vw;
-    display: flex;
-    min-height: 500px;
-    
-}
-.gene{
-   
-    background-color: aliceblue;
-    width:25%;
-    margin:  auto;
-    margin-top: auto;
-    justify-content: center;
-   padding: 30px;
-   border-radius: 20px;
-}
-input{
-    width: 88%;
-    height: 20%;
-    
-    outline:none;
-    padding: 15px;font-size: larger;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-.click{
-    text-align: center;
-    width:88% ;
-    color: aliceblue;
-    background-color: blue;
-    font-weight: 600;
-    font-size: larger;
-   height: 10%;
-    border-radius: 20px;
-    padding: 15px;
-    cursor: pointer;
-    font-family: sans-serif;
-    user-select: none;
 
+.container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
-h1{
+
+.gene {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2d3748;
     text-align: center;
-    font-family: sans-serif;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
-img#img{
-    height:100%;
-    width:100%;
+
+.subtitle {
+    color: #718096;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+.qrcode {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.qrcode img {
+    max-width: 200px;
+    height: auto;
+}
+
+.click {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.click:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.click:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+    .gene {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    .click {
+        font-size: 0.9rem;
+    }
 }
